@@ -10,11 +10,20 @@ targetCompatibility = JavaVersion.VERSION_16
 archivesBaseName = "consistency_plus-${project.minecraft_version}"
 version = "${project.mod_version}-${getVersionMetadata()}"
 
+repositories {
+    mavenLocal()
+    maven {
+        url = uri("https://storage.googleapis.com/devan-maven/")
+    }
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.minecraft_version}+build.${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "net.devtech:arrp:0.4.3"
+    modImplementation "com.tterrag:Registrate-Fabric:0.2.0"
 }
 
 processResources {

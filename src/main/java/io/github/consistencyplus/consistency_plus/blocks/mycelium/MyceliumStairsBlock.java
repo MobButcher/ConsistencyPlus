@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.blocks.mycelium;
 
-import io.github.consistencyplus.consistency_plus.core.HasUngrownVariant;
-import io.github.consistencyplus.consistency_plus.core.IsSpreadableMyceliumBlock;
+import io.github.consistencyplus.consistency_plus.core.blocks.HasUngrownVariant;
+import io.github.consistencyplus.consistency_plus.core.blocks.IsSpreadableMyceliumBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SnowBlock;

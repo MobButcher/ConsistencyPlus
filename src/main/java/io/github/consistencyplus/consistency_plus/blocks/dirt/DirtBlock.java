@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.blocks.dirt;
 
-import io.github.consistencyplus.consistency_plus.core.HasGrownGrassVariant;
-import io.github.consistencyplus.consistency_plus.core.HasGrownMyceliumVariant;
+import io.github.consistencyplus.consistency_plus.core.blocks.HasGrownGrassVariant;
+import io.github.consistencyplus.consistency_plus.core.blocks.HasGrownMyceliumVariant;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

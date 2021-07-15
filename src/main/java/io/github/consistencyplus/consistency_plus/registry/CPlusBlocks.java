@@ -1,7 +1,7 @@
 package io.github.consistencyplus.consistency_plus.registry;
 
-import io.github.consistencyplus.consistency_plus.core.BaseConsistencyCarvedPumpkinBlock;
-import io.github.consistencyplus.consistency_plus.core.BaseConsistencyStairBlock;
+import io.github.consistencyplus.consistency_plus.core.blocks.BaseConsistencyCarvedPumpkinBlock;
+import io.github.consistencyplus.consistency_plus.core.blocks.BaseConsistencyStairBlock;
 import io.github.consistencyplus.consistency_plus.blocks.WarpedNetherWartPlantBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtSlabBlock;
 import io.github.consistencyplus.consistency_plus.blocks.dirt.DirtStairsBlock;
@@ -19,12 +19,17 @@ import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.WordUtils;
+import org.apache.logging.log4j.util.Strings;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.block.piston.PistonBehavior.BLOCK;
 
 public class CPlusBlocks {
-
     /*
     templates
     block:  public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy(STONE_BRICKS)));
@@ -4882,7 +4887,7 @@ The gold and iron won't be in the code for now since they aren't a priority (sin
     public static final Block SUSPICIOUS_SLAB = register("suspicious_slab", new SlabBlock(FabricBlockSettings.copy(CLAY)));
 //  public static final Block SIUOLS_SANITY = register("is_a_crab", new Block(FabricBlockSettings.copy(HELP_ME)));
     //  You are having funny fun because your playing a Siuolplexplex contributed mod
-
+    
     private static Block register(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier("consistency_plus", name), block);
     }
