@@ -1,4 +1,6 @@
-# Consistency+
+# Consistency+ - Legacy Branch
+
+NOTICE: THIS BRANCH IS FOR THE LEGACY CODEBASE INCASE OF ANY FUTURE 0.4.X UPDATES
 
 Consistency+ is a Minecraft mod for 1.16.4+ Fabric and Quilt Mod Loader about making a consistent block list.
 
