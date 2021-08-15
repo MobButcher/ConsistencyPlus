@@ -5,16 +5,18 @@ import io.github.consistencyplus.consistency_plus.registry.CPlusItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
+import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ConsistencyPlus implements ModInitializer {
 	private static final Logger LOGGER = LogManager.getLogger();
-
+	public static final String ID = "consistency_plus";
+	
 	@Override
 	public void onInitialize() {
 		ModContainer mod = FabricLoader.getInstance()
-						.getModContainer("consistency_plus")
+						.getModContainer(ID)
 						.orElseThrow(NullPointerException::new);
 
 		String MOD_VERSION;
@@ -71,5 +73,9 @@ public class ConsistencyPlus implements ModInitializer {
 		LOGGER.info("Consistency+ Main - Finished initialization process");
 
 
+	}
+	
+	public static Identifier id(String path) {
+		return new Identifier(ID, path);
 	}
 }
