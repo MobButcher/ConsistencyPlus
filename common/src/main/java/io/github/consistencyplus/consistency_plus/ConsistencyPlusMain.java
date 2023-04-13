@@ -1,6 +1,5 @@
 package io.github.consistencyplus.consistency_plus;
 
-import io.github.consistencyplus.consistency_plus.registry.ConsistencyPlusBlocksLoader;
 import io.github.consistencyplus.consistency_plus.util.LoaderHelper;
 
 public class ConsistencyPlusMain {
@@ -8,7 +7,5 @@ public class ConsistencyPlusMain {
 
     public static void init(LoaderHelper loaderInfo) {
         LOADER_HELPER = loaderInfo;
-        ConsistencyPlusBlocksLoader.init();
-
     }
 }

@@ -1,7 +1,5 @@
 package io.github.consistencyplus.consistency_plus.util;
 
-import java.nio.file.Path;
-
 public interface LoaderHelper {
     default boolean getIsInDevMode() {
         return false;
@@ -15,8 +13,6 @@ public interface LoaderHelper {
         return null;
     }
 
-    default Path getPath(String string) {
-        return null;
-    }
+    //getFile
     //
 }
